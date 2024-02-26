@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navbar.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Optional: Prevents interactions when hidden */
+}
